@@ -5,7 +5,7 @@
 #include "Primitive.h"
 
 // TODO 1: Add Bullet common include btBulletDynamicsCommon.h
-
+#include  "Bullet\src\btBulletDynamicsCommon.h"
 class DebugDrawer;
 
 class ModulePhysics3D : public Module
@@ -24,10 +24,18 @@ private:
 
 	bool debug;
 
+	btDiscreteDynamicsWorld* world;
+	
+	btDispatcher* dispatcher;
+	btBroadphaseInterface* pairCache;
+	btConstraintSolver* constraintSolver;
+	btCollisionConfiguration* collisionConfiguration;
+
+
 	DebugDrawer* debug_draw;
 };
 
-/*
+
 // Uncomment the debug Drawer once you finish TODO 4
 class DebugDrawer : public btIDebugDraw
 {
@@ -46,4 +54,3 @@ public:
 	Line line;
 	Primitive point;
 };
-*/

@@ -36,6 +36,10 @@ update_status ModuleSceneIntro::Update(float dt)
 	p.axis = true;
 	p.Render();
 
+	/*Sphere s(0.5f);
+	s.SetPos(0, 2, 0);
+	s.Render();*/
+
 	return UPDATE_CONTINUE;
 }
 
