@@ -4,7 +4,7 @@
 #include "Globals.h"
 #include "Primitive.h"
 
-#define MAX_SNAKE 8
+#define MAX_SNAKE 7
 
 struct PhysBody3D;
 
